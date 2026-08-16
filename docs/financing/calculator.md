@@ -12,19 +12,19 @@ Model your Swiss mortgage. The calculator follows the standard Swiss structure: 
   <div class="calc-grid">
     <div class="calc-field">
       <label>Property value (CHF)</label>
-      <input type="number" x-model.number="propertyValue" min="0" step="10000" @input="calculate()">
+      <input type="number" x-model.number="propertyValue" min="0" step="10000" @input="recalc()">
     </div>
     <div class="calc-field">
       <label>Down payment / equity (CHF)</label>
-      <input type="number" x-model.number="equity" min="0" step="5000" @input="calculate()">
+      <input type="number" x-model.number="equity" min="0" step="5000" @input="recalc()">
     </div>
     <div class="calc-field">
       <label>Interest rate (% p.a.)</label>
-      <input type="number" x-model.number="rate" min="0" step="0.05" @input="calculate()">
+      <input type="number" x-model.number="rate" min="0" step="0.05" @input="recalc()">
     </div>
     <div class="calc-field">
       <label>Amortization term (years)</label>
-      <input type="number" x-model.number="years" min="1" max="40" step="1" @input="calculate()">
+      <input type="number" x-model.number="years" min="1" max="40" step="1" @input="recalc()">
     </div>
   </div>
 
