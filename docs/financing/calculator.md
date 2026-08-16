@@ -141,3 +141,12 @@ The scenario used in the [Financing guide](index.md):
 
 !!! note "Why the stress test matters more"
     The 2% figures above are what you would actually pay. The bank, however, assesses affordability at a **5% stress rate** — that test decides how much you can borrow, not the 2% chart.
+
+## Stress-test comparison
+
+| Rate | 1st mortgage interest/yr | 2nd mortgage interest/yr (avg) | Total interest/yr (avg) | Monthly (incl. amortization) |
+| ---- | ------------------------ | ------------------------------ | ----------------------- | ---------------------------- |
+| **2% (actual)** | CHF 13,000 | ~CHF 1,500 | ~CHF 14,500 | ~CHF 2,050 |
+| **5% (stress)** | CHF 32,500 | ~CHF 3,750 | ~CHF 36,250 | ~CHF 4,020 |
+
+The stress test uses 5% on the *entire* CHF 800k mortgage = CHF 40,000/yr interest + CHF 10,000 amortization + maintenance/ancillary → determines your borrowing capacity.

@@ -40,8 +40,15 @@ function taxCalculator() {
       const other = parseFloat(this.otherDeductions) || 0;
       return Math.max(0, income + this.getImputed() - interest - maintenance - p3a - other);
     },
+    getTaxValueFactor() {
+      // Tax value (Steuerwert) as % of market value
+      return this.canton === "ZH" ? 0.80 : 0.85; // ZH: ~70-85%, AG: ~75-90%
+    },
     netWealth() {
-      return Math.max(0, (parseFloat(this.propertyValue) || 0) - (parseFloat(this.mortgageDebt) || 0));
+      const propertyValue = parseFloat(this.propertyValue) || 0;
+      const mortgageDebt = parseFloat(this.mortgageDebt) || 0;
+      const taxValue = propertyValue * this.getTaxValueFactor();
+      return Math.max(0, taxValue - mortgageDebt);
     },
 
     // Linear interpolation over [value, rate] pairs; clamped outside the range.

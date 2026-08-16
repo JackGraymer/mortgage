@@ -28,23 +28,41 @@ Several structural factors keep Swiss property prices high and ownership rates l
 
 ## Interest-rate environment
 
-Swiss mortgage rates are anchored to the Swiss National Bank (SNB) policy rate and the **SARON** benchmark. Key facts:
+Swiss mortgage rates are anchored to the Swiss National Bank (SNB) policy rate and the **SARON** (Swiss Average Rate Overnight) benchmark. Key facts:
 
--   After a long period of near-zero policy rates (2015–2022), the SNB raised rates through 2023, peaking around 1.75%, then started cutting again in 2024.
--   Fixed-rate mortgages (2, 5, 10 or 15 years) are priced off long-term swap rates and are the most common choice.
--   SARON mortgages track the overnight benchmark and are usually cheaper at the start but carry interest-rate risk.
+-   After a long period of negative/near-zero policy rates (2015–2022), the SNB raised rates through 2023 to 1.75%, then began cutting in 2024. As of 2025, the SNB policy rate stands at **1.0%**.
+-   Fixed-rate mortgages (2, 3, 5, 7, 10 or 15 years) are priced off long-term swap rates and remain the most popular choice (≈80% of new mortgages).
+-   SARON mortgages track the overnight benchmark (compounded 3M SARON) plus a bank margin. They are typically cheaper initially but expose borrowers to rate risk.
+-   **Forward SARON** and **SARON rollover** products exist for borrowers wanting variable exposure with some predictability.
 
 !!! tip
-    For personal planning, a **fixed-rate mortgage** gives predictable costs. Banks stress-test your finances at an assumed **5% interest rate** regardless of the actual rate you pay — see the affordability rules in the next section.
+    For a primary residence, a **fixed-rate mortgage** removes the biggest financial risk (rising rates). SARON makes sense when you expect rates to fall or stay flat, or if you plan to sell/amortize within a few years. Banks stress-test your finances at an assumed **5% interest rate** regardless of the actual rate you pay — see the affordability rules in the next section.
 
 ## Regional differences
 
 | Region | Typical characteristics |
 | ------ | ----------------------- |
-| **Zurich (ZH)** | High prices, strong demand, deep mortgage market (ZKB, banks, brokers), higher tax multiplier but high wages. |
-| **Aargau (AG)** | More affordable than Zurich, good access to the A1/A3 corridors, moderate tax burden. |
-| **Lake Geneva arc** | Among the most expensive areas in the country (Geneva, Lausanne). |
-| **Ticino, Valais** | Lower prices; holiday-home rules (Lex Koller tourist zones) apply in places. |
+| **Zurich (ZH)** | Highest prices, strongest demand, deep mortgage market (ZKB, banks, brokers), higher tax multiplier but highest wages. Tight zoning. |
+| **Aargau (AG)** | More affordable than Zurich, excellent A1/A3 motorway access, moderate tax burden, growing commuter belt. |
+| **Zug (ZG)** | Very high prices, very low taxes (tax haven for corporates/individuals), strong international community. |
+| **Lake Geneva arc (VD/GE)** | Among the most expensive areas (Geneva, Lausanne, Nyon). High international demand, French-speaking. |
+| **Bern (BE)** | Capital region, moderate prices, bilingual, good infrastructure. |
+| **Basel (BS/BL)** | Pharma/chem industry hub, cross-border commuters, moderate-to-high prices. |
+| **Ticino (TI)** | Lower prices; Mediterranean climate; Lex Koller tourist-zone rules apply in many municipalities. |
+| **Valais (VS)** | Alpine, holiday-home hotspots (Zermatt, Verbier) — heavy Lex Koller restrictions in tourist zones. |
+
+## Energy & renovation requirements
+
+Switzerland is phasing out fossil-fuel heating. Key rules affecting buyers:
+
+-   **GEAK/CECB** (building energy certificate): Mandatory when selling, renting, or doing major renovations in most cantons. Grades A–G.
+-   **Heating replacement:** Most cantons now require renewable heating (heat pump, district heating, wood) when oil/gas boilers fail. Some mandate it by a fixed date (e.g., 2030/2035).
+-   **Minergie standard:** Voluntary low-energy building standard; often required for new builds in some municipalities.
+-   **Cantonal subsidies:** Generous subsidies for heat pumps, solar PV, insulation, window replacement (often 20–30% of costs).
+-   **Tax deductions:** Energy-efficient renovations are often 100% deductible in the year incurred (even if they increase property value).
+
+!!! tip "Budget for upgrades"
+    If buying an older property (pre-2000) with oil/gas heating, budget **CHF 50,000–150,000+** for heating replacement + insulation within 5–10 years. Check the GEAK rating and cantonal deadlines before buying.
 
 ## Recommended reading order
 

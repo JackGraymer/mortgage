@@ -1,46 +1,52 @@
 // Simplified effective tax-rate data for the tax estimator.
 // APPROXIMATE values for planning purposes only — not authoritative.
+// Based on 2025/2026 tariff tables (federal + cantonal + communal combined).
 // Income arrays: [taxable income, combined effective income-tax rate incl. federal + cantonal + communal].
 // Wealth arrays: [net wealth, effective wealth-tax rate incl. cantonal + communal].
+// Note: Zurich city (Stadt Zürich) has higher municipal multiplier; these are canton-wide averages.
 window.taxData = {
   ZH: {
     name: "Zurich",
     income: [
-      [40000, 0.055],
-      [60000, 0.075],
-      [100000, 0.105],
-      [150000, 0.14],
-      [250000, 0.18],
-      [400000, 0.22],
-      [600000, 0.25],
-      [1000000, 0.28],
+      [30000, 0.025],
+      [50000, 0.045],
+      [80000, 0.075],
+      [120000, 0.11],
+      [160000, 0.14],
+      [250000, 0.185],
+      [400000, 0.225],
+      [600000, 0.26],
+      [1000000, 0.29],
     ],
     wealth: [
-      [100000, 0.0015],
-      [300000, 0.002],
-      [600000, 0.0025],
-      [1000000, 0.003],
-      [2000000, 0.0038],
+      [50000, 0.0005],
+      [100000, 0.001],
+      [200000, 0.0015],
+      [500000, 0.0022],
+      [1000000, 0.0028],
+      [2000000, 0.0033],
     ],
   },
   AG: {
     name: "Aargau",
     income: [
-      [40000, 0.06],
-      [60000, 0.08],
-      [100000, 0.11],
-      [150000, 0.145],
+      [30000, 0.03],
+      [50000, 0.05],
+      [80000, 0.08],
+      [120000, 0.115],
+      [160000, 0.145],
       [250000, 0.185],
       [400000, 0.225],
       [600000, 0.255],
       [1000000, 0.285],
     ],
     wealth: [
-      [100000, 0.0013],
-      [300000, 0.0018],
-      [600000, 0.0023],
+      [50000, 0.0005],
+      [100000, 0.001],
+      [200000, 0.0016],
+      [500000, 0.0022],
       [1000000, 0.0027],
-      [2000000, 0.0034],
+      [2000000, 0.0032],
     ],
   },
 };

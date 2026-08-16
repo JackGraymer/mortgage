@@ -10,85 +10,138 @@ Owning a home in Switzerland has significant tax consequences. The three big top
 !!! tip "Skip to the estimator"
     Use the [Tax Estimator](calculator.md) to get an approximate income + wealth tax figure for Zurich or Aargau.
 
-## Imputed rental value (Eigenmietwert)
+## Imputed rental value (Eigenmietwert / valeur locative)
 
 Homeowners in Switzerland are taxed on the **imputed rental value** — the hypothetical rent the owner would pay if they were renting the property. It is added to your taxable income.
 
 **Key points:**
 
--   The imputed value is set by the municipality, typically at **60–80% of the market rental value**
+-   The imputed value is set by the municipality, typically at **60–70% of the market rental value** (varies by canton)
 -   It applies only to the portion you occupy yourself (not to rented-out units)
 -   You can deduct **mortgage interest** and **maintenance costs** against it
+-   **System under review:** The Federal Council has proposed abolishing the imputed rental value (with a corresponding loss of mortgage interest deduction). As of 2025, no change has been enacted — the system remains in force.
 
 **Example — Zurich, property value CHF 1M:**
 
--   Imputed rental value: ~CHF 12,000/year (added to income)
+-   Imputed rental value: ~CHF 25,000–35,000/year (added to income; ~2.5–3.5% of value)
 -   Mortgage interest deduction (CHF 650k @ 2%): ~CHF 13,000/year (deducted)
--   **Net effect:** the interest deduction often roughly offsets the imputed rental value, so the burden is usually modest at low interest rates — but it grows if rates fall and you have little debt.
+-   Maintenance deduction (lump sum 10% of imputed value or actuals): ~CHF 2,500–3,500
+-   **Net effect:** at current low rates, the interest deduction often roughly offsets the imputed rental value, so the net income tax burden is modest — but it grows if rates fall and you have little debt.
 
 ## Deductions
 
 | Deduction | Details |
 | --------- | ------- |
-| **Mortgage interest** | Fully deductible for 1st and 2nd mortgages |
-| **Maintenance & renovation** | Actual costs deductible. Some cantons allow a lump-sum instead (e.g. ZH: 10% of imputed rental value or 20% of property value depending on age) |
-| **Pillar 3a contributions** | Deductible up to the annual limit (CHF 7,256 in 2025) |
-| **Energy-efficient renovations** | Enhanced deductions for eco-friendly upgrades in most cantons |
+| **Mortgage interest** | Fully deductible for 1st and 2nd mortgages (and any other debt secured on the property) |
+| **Maintenance & renovation** | Actual costs deductible. Most cantons allow a **lump-sum deduction** instead: e.g., Zurich: 10% of imputed rental value (properties <10 yr) or 20% (older); Aargau: 10–20% depending on age. Lump sum is simpler and often higher for older properties. |
+| **Pillar 3a contributions** | Deductible up to the annual limit (CHF 7,256 in 2025 for employees with pension fund) |
+| **Energy-efficient renovations** | Enhanced deductions for eco-friendly upgrades (heat pump, solar, insulation, windows) in most cantons — often 100% deductible in the year incurred, even if they increase property value |
+| **Insurance premiums** | Building insurance, liability insurance premiums partially deductible (varies by canton) |
+| **Admin/management costs** | Property management fees, accounting for rental units |
 
-## Property gains tax (Grundstückgewinnsteuer)
+!!! tip "Actuals vs. lump sum"
+    For older properties (>10–15 years), the **lump-sum maintenance deduction** (e.g., 20% of imputed rental value in ZH) is usually far more advantageous than actuals. For new builds, actuals may be better. You can choose annually.
 
-When you sell a property, any capital gain is subject to **property gains tax** (cantonal, varies):
+## Property gains tax (Grundstückgewinnsteuer / impôt sur les gains immobiliers)
+
+When you sell a property, any capital gain (sale price − purchase price − value-enhancing investments − selling costs) is subject to **property gains tax** (cantonal/communal, not federal):
 
 -   The rate **decreases the longer you hold** the property (holding-period discount)
 -   Typical range: **10–50%** depending on canton and holding period
+-   **Inflation adjustment:** Some cantons (ZH, AG) index the purchase price for inflation, reducing the taxable gain
+-   **Value-enhancing investments** (Anlagekosten / frais d'amélioration) increase the cost base — keep all receipts!
 
-| Canton | Base rate | Holding-period discount |
-| ------ | --------- | ----------------------- |
-| **Zurich** | Progressive, up to ~40% | Reduces by ~2–4% per year of ownership |
-| **Aargau** | Progressive, up to ~35% | Reduces by ~2–3% per year of ownership |
+| Canton | Base rate (progressive) | Holding-period discount | Inflation adjustment |
+| ------ | ----------------------- | ----------------------- | -------------------- |
+| **Zurich** | Up to ~40% | ~2–4% per year; full exemption after ~25–30 years | Yes (national consumer price index) |
+| **Aargau** | Up to ~35% | ~2–3% per year; full exemption after ~20–25 years | Yes |
+| **Zug** | Up to ~30% | Generous; full exemption after ~20 years | Yes |
+| **Schwyz** | Up to ~25% | Very generous; low rates overall | Varies by municipality |
+| **Geneva** | Up to ~50% | Slower reduction | No |
 
 !!! tip
-    If you bought with withdrawn Pillar 2 money, that withdrawal becomes taxable on sale too — another reason to weigh withdrawal vs. pledge carefully.
+    If you bought with withdrawn Pillar 2 money, that withdrawal becomes taxable on sale too (as income at your marginal rate) — another reason to weigh withdrawal vs. pledge carefully.
 
-## Wealth tax (Vermögenssteuer)
+!!! note "Replacement purchase (Ersatzbeschaffung)"
+    If you sell your principal residence and buy a new one within a reasonable period (typically 2–3 years, varies by canton), you can **defer** the gains tax. The tax liability rolls over to the new property. This applies only to owner-occupied homes, not investment properties.
 
-Real estate is included in your **wealth tax** calculation:
+## Wealth tax (Vermögenssteuer / impôt sur la fortune)
 
--   **Zurich:** real estate is valued at market value (tax-authority assessment)
--   **Aargau:** similar approach; tax is calculated on net wealth (total assets minus total debt, including mortgages)
+Real estate is included in your **wealth tax** calculation (cantonal/communal, not federal):
+
+-   **Zurich:** real estate is valued at **tax value** (Steuerwert), which is typically **70–85% of market value** (set by tax authority)
+-   **Aargau:** similar approach; tax value is typically **75–90% of market value**
+-   Tax is calculated on **net wealth** (total assets minus total debt, including mortgages)
+-   Mortgage debt is fully deductible from wealth
 
 Because mortgage debt is deducted from wealth, a highly leveraged purchase reduces wealth tax — but remember the interest on that debt is also a real cost.
 
-## Property transfer tax (Handänderungssteuer)
+| Canton | Tax value % of market | Wealth tax rate (effective, on net wealth) |
+| ------ | --------------------- | ------------------------------------------ |
+| **Zurich** | ~70–85% | Progressive, ~0.1–0.35% on net wealth > CHF 100k (single) |
+| **Aargau** | ~75–90% | Progressive, ~0.1–0.3% on net wealth > CHF 100k (single) |
 
-Due when the property changes hands:
+!!! note "Tax value vs. market value"
+    The tax authority's valuation (Steuerwert) is usually well below market value. This is a significant advantage for wealth tax purposes.
 
-| Canton | Rate | Who pays |
-| ------ | ---- | -------- |
-| **Zurich** | ~0.5–1% of purchase price | Usually the buyer |
-| **Aargau** | ~1–1.5% of purchase price | Usually the buyer |
-| **Zug** | ~0.5–1% | Buyer |
-| **Lucerne (LU)** | ~0.5–1% | Buyer |
-| **Schwyz (SZ)** | Varies by municipality | Buyer |
-| **St. Gallen (SG)** | ~1–2% | Buyer |
-| **Thurgau (TG)** | ~0.5–1% | Buyer |
+## Property transfer tax (Handänderungssteuer / droits de mutation)
+
+Due when the property changes hands (paid by buyer in most cantons):
+
+| Canton | Rate | Who pays | Notes |
+| ------ | ---- | -------- | ----- |
+| **Zurich** | ~0.1–0.5% (municipal only; canton abolished its share in 2010) | Buyer | Municipal rate varies; city of Zurich = 0.1% |
+| **Aargau** | ~1.0–1.5% (cantonal + municipal) | Buyer | Cantonal 1% + municipal 0–0.5% |
+| **Zug** | ~0.5–1% | Buyer | Low rates |
+| **Lucerne (LU)** | ~0.5–1% | Buyer | |
+| **Schwyz (SZ)** | Varies by municipality (often 0%) | Buyer | Many municipalities charge 0% |
+| **St. Gallen (SG)** | ~1–2% | Buyer | |
+| **Thurgau (TG)** | ~0.5–1% | Buyer | |
+| **Geneva (GE)** | ~3% (cantonal) + communal | Buyer | Highest in Switzerland |
+| **Vaud (VD)** | ~2–3% | Buyer | |
+| **Bern (BE)** | ~1.5–2.5% | Buyer | |
 
 !!! note
-    Some cantons (e.g. Schwyz) have lower rates, making them attractive for transactions. Always check the **municipal** rate as well — it can differ from the cantonal rate.
+    Some cantons (e.g. Schwyz, Zurich) have very low or no cantonal transfer tax, making them attractive for transactions. Always check the **municipal** rate as well — it can differ from the cantonal rate. First-time buyers may qualify for reductions in some cantons.
 
 ## Notary and land register fees
 
 | Fee type | Typical cost |
 | -------- | ------------ |
-| **Notary fees** | 0.1–0.5% of purchase price (varies by canton) |
+| **Notary fees** | 0.1–0.5% of purchase price (varies by canton; often fixed tariff) |
 | **Land register entry (Grundbuch)** | 0.1–0.3% of purchase price |
 
 | Canton | Notary + Land Register (combined, typical) |
 | ------ | ------------------------------------------ |
-| **Zurich** | ~0.5–0.8% of purchase price |
+| **Zurich** | ~0.5–0.8% of purchase price (notary ~0.1–0.25%, land register ~0.1–0.3%) |
 | **Aargau** | ~0.6–1.0% of purchase price |
 | **Zug** | ~0.5–0.8% |
 | **Lucerne** | ~0.5–0.8% |
+
+!!! tip "Notary choice"
+    In most cantons you can choose your notary. Fees are regulated but can vary slightly. Ask for a cost estimate (Kostenvoranschlag) upfront.
+
+## Inheritance & gift tax (Erbschafts- & Schenkungssteuer)
+
+Inheritance and gift taxes are **cantonal/communal** (no federal tax). Key points:
+
+-   **Spouses/registered partners:** Exempt in all cantons
+-   **Direct descendants (children, grandchildren):** Exempt in most cantons (ZH, AG, ZG, SZ, etc.); some cantons tax at low rates
+-   **Others (siblings, nieces/nephews, friends):** Taxed at progressive rates, often **10–50%** depending on canton and relationship
+-   **Real estate:** Valued at tax value (Steuerwert) for inheritance/gift tax purposes
+-   **Mortgage debt:** Deductible from the property value for tax base calculation
+-   **Gift tax:** Similar rates to inheritance; some cantons have a waiting period (e.g., 3–5 years) before gifted property is exempt from gains tax on subsequent sale
+
+| Canton | Spouse/Children | Siblings/Other | Notes |
+| ------ | --------------- | -------------- | ----- |
+| **Zurich** | Exempt | Up to ~40% | Progressive by degree of kinship |
+| **Aargau** | Exempt | Up to ~35% | |
+| **Schwyz** | Exempt | Very low / 0% in some municipalities | Attractive for estate planning |
+| **Geneva** | Exempt | Up to ~50% | High rates for non-relatives |
+| **Vaud** | Exempt | Up to ~50% | |
+
+!!! tip "Estate planning"
+    If you have heirs who are not direct descendants, consider gifting during your lifetime (if canton has favorable gift tax) or structuring ownership via a company/usufruct. Seek specialist advice.
 
 ## Estimate your tax
 

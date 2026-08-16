@@ -7,41 +7,51 @@ description: How the Swiss mortgage market works, who the main lenders are and h
 
 Switzerland has a deep, well-regulated mortgage market with a broad mix of lenders. Understanding who lends and how renewals work helps you negotiate better terms.
 
-## The lending landscape
+## The lending landscape (2024/2025 estimates)
 
 | Lender type | Market share | Examples |
 | ----------- | ------------ | -------- |
-| **Cantonal banks** | ~30% | Zürcher Kantonalbank (ZKB), Aargauische Kantonalbank (AKB) |
-| **Raiffeisen Group** | ~20% | Raiffeisen (network of cooperative banks) |
-| **Big banks** | ~20% | UBS, Credit Suisse (now part of UBS) |
-| **Insurance companies** | ~10% | Swiss Life, AXA, Helvetia |
-| **Other / online** | ~20% | PostFinance, Migros Bank, online brokers (MoneyPark, HypoPlus) |
+| **Cantonal banks** | ~30% | Zürcher Kantonalbank (ZKB), Aargauische Kantonalbank (AKB), BCV (Vaud), BCGE (Geneva) |
+| **Raiffeisen Group** | ~18–20% | Raiffeisen (network of 200+ cooperative banks) |
+| **Big banks** | ~18–20% | UBS (incl. former Credit Suisse) |
+| **Insurance companies** | ~10–12% | Swiss Life, AXA, Helvetia, Bâloise, Mobiliar |
+| **Other / online / fintech** | ~20% | PostFinance, Migros Bank, WIR Bank, MoneyPark, HypoPlus, Comparis, Atupri |
 
 ## How Swiss mortgage lending works
 
--   **Long-term relationship.** Banks typically prefer customers who also hold a salary account and other products; bundling can earn you a discount.
+-   **Long-term relationship.** Banks typically prefer customers who also hold a salary account and other products; bundling can earn you a discount (typically 0.05–0.15%).
 -   **Renewal / rollover.** Fixed-rate mortgages auto-renew at the end of the term. Start negotiating **3–6 months before expiry** — banks are more willing to offer discounts when retention is at stake.
 -   **Portability.** Some mortgages can be transferred if you sell and buy another property (within limits, and typically only with the same lender).
--   **Cantonal preferential rates.** Cantonal banks often offer special rates for residents of their canton (e.g. ZKB for Zurich residents, AKB for Aargau).
+-   **Cantonal preferential rates.** Cantonal banks often offer special rates for residents of their canton (e.g., ZKB for Zurich residents, AKB for Aargau).
+-   **Split mortgages:** You can split your mortgage across multiple tranches (e.g., 5yr fixed + 10yr fixed + SARON) to diversify rate risk and renewal dates.
 
 !!! tip "Renewal is a renegotiation, not an automatic renewal"
     When a fixed-rate term ends, the mortgage typically converts to the bank's standard variable rate — usually the worst deal. Always negotiate or switch before that happens.
 
 ## Mortgage brokers
 
-Independent brokers (MoneyPark, HypoPlus, Moneypark) compare offers across multiple lenders. Their service is typically **free for the buyer** — they earn a commission from the bank. Useful for first-time buyers and for renewal negotiations.
+Independent brokers (MoneyPark, HypoPlus, Atupri, Comparis, VermögensPartner) compare offers across multiple lenders. Their service is typically **free for the buyer** — they earn a commission from the bank (typically 0.3–0.5% of mortgage volume). Useful for first-time buyers and for renewal negotiations.
 
 **What to watch out for:**
 
 -   A broker's panel is not the whole market — always check at least one cantonal bank directly
--   Compare the **effective conditions** (rate, term, amortization flexibility, fees), not just the headline rate
+-   Compare the **effective conditions** (rate, term, amortization flexibility, early repayment penalties, fees), not just the headline rate
 -   For the long term, a fixed-rate contract with your own bank can be just as competitive
+-   Brokers may be incentivized to place volume with certain partners — ask for the full comparison
 
 ## Practical approach
 
 1.  Get a **pre-approval** (valid 3–6 months) from your main bank first — it sets a realistic budget.
 2.  Run a broker comparison in parallel to see if the market offers better rates.
 3.  Before signing, verify the **5% stress-test** affordability yourself using the numbers in the [Financing guide](financing/index.md).
+4.  Consider a **split mortgage** (e.g., 50% 5yr fixed, 30% 10yr fixed, 20% SARON) to spread renewal risk.
+
+## Mortgage deed (Schuldbrief / cédule hypothécaire)
+
+-   The mortgage is registered as a **Schuldbrief** (mortgage deed) in the land register
+-   **Paper Schuldbrief** (physischer Schuldbrief): traditional, physical certificate held by the bank; can be pledged/transferred physically
+-   **Register Schuldbrief** (Registerschuldbrief): electronic entry only; faster, cheaper, now standard for most new mortgages
+-   The Schuldbrief amount can exceed the actual loan (e.g., CHF 1M Schuldbrief for CHF 800k loan) to allow future increases without re-registration
 
 ## Sources
 

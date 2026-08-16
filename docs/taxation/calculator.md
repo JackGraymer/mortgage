@@ -7,6 +7,9 @@ description: Estimate your combined federal + cantonal + communal income tax and
 
 Estimate the annual income and wealth tax you would pay when owning a home in **Zurich** or **Aargau**. The estimator models the **imputed rental value**, the standard deductions (mortgage interest, maintenance, Pillar 3a) and simplified effective tax rates. Everything runs locally in your browser.
 
+!!! warning "Estimate only"
+    This tool uses simplified effective-rate curves (federal + cantonal + communal combined) and a **3.5% imputed rental value** approximation. Real tax bills depend on your exact municipality (Gemeinde), official tariff tables, family situation, and all applicable deductions. Use for budgeting only — not for filing.
+
 <div class="calc-widget" x-data="taxCalculator()">
   <h3>Inputs</h3>
   <div class="calc-grid">
@@ -87,7 +90,7 @@ Estimate the annual income and wealth tax you would pay when owning a home in **
 
     <p class="calc-note">
       Taxable income = gross income + imputed rental value − mortgage interest − maintenance (1% of value)
-      − Pillar 3a − other deductions. Net wealth = property value − mortgage debt.
+      − Pillar 3a − other deductions. Net wealth = property tax value (est. 80% ZH / 85% AG of market) − mortgage debt.
     </p>
   </div>
 </div>
@@ -97,10 +100,11 @@ Estimate the annual income and wealth tax you would pay when owning a home in **
 
 ## How the estimate is computed
 
-1.  **Imputed rental value** is added to your income. Default: **3.5% of the property value** (a common approximation; the municipality sets the official figure).
-2.  **Deductions** are subtracted: mortgage interest (debt × rate), maintenance (1% of value), Pillar 3a, and any other deductions.
+1.  **Imputed rental value** is added to your income. Default: **3.5% of the property value** (a common approximation; the municipality sets the official figure, typically 2.5–3.5% of market value).
+2.  **Deductions** are subtracted: mortgage interest (debt × rate), maintenance (1% of value or lump-sum % of imputed value), Pillar 3a, and any other deductions.
 3.  **Income tax** = taxable income × an effective rate read from a simplified curve per canton (federal + cantonal + communal combined). For married couples, a double-tariff approximation is applied (taxed as if half the income).
-4.  **Wealth tax** = net wealth (property − debt) × an effective wealth-tax curve per canton.
+4.  **Wealth tax** = net wealth (property tax value − debt) × an effective wealth-tax curve per canton.
+    - Property **tax value** (Steuerwert) is used, not market value: typically **70–85% of market value in ZH**, **75–90% in AG**.
 
 The effective-rate data lives in `tax-data.js` — if you later obtain the official tariff tables, you can replace the curves without touching the page.
 
@@ -118,13 +122,14 @@ The effective-rate data lives in `tax-data.js` — if you later obtain the offic
 
 **Rough result:**
 
-- Imputed rental value: CHF 35,000 (auto) → taxable income ≈ CHF 120,000 + 35,000 − 13,000 − 10,000 − 7,256 ≈ **CHF 124,744**
+- Imputed rental value: CHF 35,000 (auto, 3.5%) → taxable income ≈ CHF 120,000 + 35,000 − 13,000 (interest) − 10,000 (maintenance 1%) − 7,256 (3a) ≈ **CHF 124,744**
+- Property tax value (est. 80%): CHF 800,000 → net wealth = CHF 800,000 − 650,000 = **CHF 150,000**
 - Effective income-tax rate ≈ **~12.5%** → income tax ≈ **CHF 15,600**
-- Net wealth: CHF 350,000 → wealth tax ≈ **~CHF 760**
-- **Total estimated tax ≈ CHF 16,400/yr (~CHF 1,370/month)**
+- Wealth tax rate on CHF 150k ≈ **~0.2%** → wealth tax ≈ **CHF 300**
+- **Total estimated tax ≈ CHF 15,900/yr (~CHF 1,325/month)**
 
 !!! note "Reality check"
-    Exact figures depend on the official tariff table, your municipal multiplier and deductions such as pension contributions and insurance premiums. Use the estimate as a budgeting guide, not as a tax filing.
+    Exact figures depend on the official tariff table, your municipal multiplier (Gemeindesteuerfuss), and deductions such as pension contributions, insurance premiums, and commuting costs. Use the estimate as a budgeting guide, not as a tax filing.
 
 ## Sources
 

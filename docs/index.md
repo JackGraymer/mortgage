@@ -70,6 +70,14 @@ A practical, self-contained guide to purchasing residential property in Switzerl
 
     [:octicons-arrow-right-24: Read the process](process.md)
 
+-   :material-cash-multiple:{ .lg .middle } __Costs & Fees__
+
+    ---
+
+    All one-off closing costs (notary, transfer tax, mortgage setup) and ongoing annual costs.
+
+    [:octicons-arrow-right-24: Read the costs guide](costs.md)
+
 -   :material-checkbox-marked-circle-outline:{ .lg .middle } __Checklist__
 
     ---
