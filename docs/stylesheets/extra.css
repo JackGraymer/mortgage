@@ -1,0 +1,126 @@
+.md-grid {
+  max-width: 1440px;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+/* --- Calculator widget base --- */
+.calc-widget {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+  background: var(--md-default-bg-color);
+}
+
+.calc-widget h3 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.calc-field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.25rem;
+}
+
+.calc-field input[type="number"],
+.calc-field select {
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.calc-field input[type="range"] {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.calc-range-value {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.calc-results {
+  margin-top: 1rem;
+}
+
+.calc-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.calc-stat {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  background: var(--md-code-bg-color);
+}
+
+.calc-stat .calc-stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--md-default-fg-color--light);
+}
+
+.calc-stat .calc-stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.calc-note {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.5rem;
+}
+
+.calc-warning {
+  font-size: 0.85rem;
+  color: #b3261e;
+  margin-top: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] .calc-warning {
+  color: #f2b8b5;
+}
+
+.calc-table-wrap {
+  max-height: 480px;
+  overflow-y: auto;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.375rem;
+}
+
+.calc-table-wrap table {
+  margin: 0;
+}
+
+.calc-table-wrap th {
+  position: sticky;
+  top: 0;
+  background: var(--md-code-bg-color);
+}
+
+.calc-chart {
+  margin-top: 1rem;
+}
