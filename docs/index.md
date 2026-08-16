@@ -79,6 +79,3 @@ A practical, self-contained guide to purchasing residential property in Switzerl
     [:octicons-arrow-right-24: Open the checklist](checklist.md)
 
 </div>
-
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Tax rules, rates and fees change and vary by canton and municipality. Always verify the details with a professional — notary, tax advisor or mortgage specialist — before making decisions.

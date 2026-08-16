@@ -52,6 +52,3 @@ Swiss mortgage rates are anchored to the Swiss National Bank (SNB) policy rate a
 2.  [Financing & Mortgages](financing/index.md) — how much can you afford?
 3.  [Taxation](taxation/index.md) — what will you pay to hold the property?
 4.  [Purchase Process](process.md) — how the purchase actually happens.
-
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Consult a professional for your specific situation.

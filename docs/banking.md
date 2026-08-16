@@ -43,9 +43,6 @@ Independent brokers (MoneyPark, HypoPlus, Moneypark) compare offers across multi
 2.  Run a broker comparison in parallel to see if the market offers better rates.
 3.  Before signing, verify the **5% stress-test** affordability yourself using the numbers in the [Financing guide](financing/index.md).
 
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Consult a professional for your specific situation.
-
 ## Sources
 
 -   [Swiss Bankers Association — Mortgage lending](https://www.swissbanking.ch/en/financial-centre/mortgage-lending)

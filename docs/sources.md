@@ -34,6 +34,3 @@ description: Official sources for Swiss property purchase, taxation and mortgage
 -   [Schwyz — Cantonal Tax Office](https://www.sz.ch/verwaltung/finanzen/steuerverwaltung.html)
 -   [St. Gallen — Cantonal Tax Office](https://www.sg.ch/steuern-finanzen.html)
 -   [Thurgau — Cantonal Tax Office](https://www.tg.ch/steuern-finanzen.html)
-
-!!! warning "Not financial or legal advice"
-    This guide provides general information only and does not constitute legal, tax or financial advice. Regulations, rates and fees are subject to change — always verify with the relevant authority or institution.

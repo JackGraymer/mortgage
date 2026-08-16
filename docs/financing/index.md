@@ -98,9 +98,6 @@ Required minimum income at the 33% ratio: **CHF 142,400 / year**.
 
 [Open the Amortization Calculator](calculator.md) to model your own figures: total interest, principal repaid and monthly costs.
 
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Consult a professional for your specific situation.
-
 ## Sources
 
 -   [Swiss Bankers Association — Mortgage lending](https://www.swissbanking.ch/en/financial-centre/mortgage-lending)

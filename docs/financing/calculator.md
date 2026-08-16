@@ -141,6 +141,3 @@ The scenario used in the [Financing guide](index.md):
 
 !!! note "Why the stress test matters more"
     The 2% figures above are what you would actually pay. The bank, however, assesses affordability at a **5% stress rate** — that test decides how much you can borrow, not the 2% chart.
-
-!!! warning "Not financial or legal advice"
-    This calculator is for planning only. Confirm all figures with your bank or a mortgage specialist.

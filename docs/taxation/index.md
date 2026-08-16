@@ -94,9 +94,6 @@ Due when the property changes hands:
 
 [Open the Tax Estimator](calculator.md) for an approximate income + wealth tax figure for Zurich or Aargau.
 
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Tax rules and rates change — always verify with a tax advisor or the cantonal tax office.
-
 ## Sources
 
 -   [ESTV — Property gains tax](https://www.estv.admin.ch/estv/en/home/direkte-bundessteuer/direkte-bundessteuer/grundstueckgewinnsteuer.html)

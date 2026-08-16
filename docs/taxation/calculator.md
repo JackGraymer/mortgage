@@ -7,9 +7,6 @@ description: Estimate your combined federal + cantonal + communal income tax and
 
 Estimate the annual income and wealth tax you would pay when owning a home in **Zurich** or **Aargau**. The estimator models the **imputed rental value**, the standard deductions (mortgage interest, maintenance, Pillar 3a) and simplified effective tax rates. Everything runs locally in your browser.
 
-!!! warning "Approximate — not a tax return"
-    This estimator uses simplified, interpolated effective rates. It gives a planning figure only. Actual tax depends on the full tariff tables, municipal multipliers, church tax, deductions and your complete wealth situation. Always confirm with a tax advisor.
-
 <div class="calc-widget" x-data="taxCalculator()">
   <h3>Inputs</h3>
   <div class="calc-grid">
@@ -128,9 +125,6 @@ The effective-rate data lives in `tax-data.js` — if you later obtain the offic
 
 !!! note "Reality check"
     Exact figures depend on the official tariff table, your municipal multiplier and deductions such as pension contributions and insurance premiums. Use the estimate as a budgeting guide, not as a tax filing.
-
-!!! warning "Not financial or legal advice"
-    This estimator is for planning only. Consult a tax advisor for your specific situation.
 
 ## Sources
 

@@ -40,9 +40,6 @@ The purchase price is only part of the total. Plan for **1–4% of the purchase 
 -   [ ] Moving costs and immediate repairs/renovations
 -   [ ] Ongoing costs: interest, amortization, maintenance, heating, insurance (see [Financing](financing/index.md))
 
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Confirm current rates with your notary and municipality.
-
 ## Sources
 
 -   [Swiss Federal Statistical Office — Housing](https://www.bfs.admin.ch/bfs/en/home/statistics/construction-housing.html)

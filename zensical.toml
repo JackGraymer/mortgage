@@ -3,7 +3,7 @@ site_url = "https://buying-house-ch.pages.dev/"
 site_name = "Buying a House in Switzerland"
 site_description = "A practical, self-contained guide to buying residential property in Switzerland (Zurich and Aargau focus): legal rules, mortgages, taxes, costs and purchase process, plus built-in calculators."
 site_author = "Alvaro Cervan"
-copyright = "&copy; 2026 Alvaro Cervan &mdash; general information only, not legal, tax or financial advice"
+copyright = "&copy; 2026 Alvaro Cervan"
 
 nav = [
   { "Home" = "index.md" },
@@ -26,6 +26,9 @@ nav = [
 
 extra_css = ["stylesheets/extra.css"]
 extra_javascript = ["https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"]
+
+[project.extra]
+generator = false
 
 [project.theme]
 language = "en"

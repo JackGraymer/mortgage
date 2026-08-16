@@ -65,9 +65,6 @@ Search → Reservation → Financing → Notarial deed → Land register → Han
 | Notarial deed to land register | 2–4 weeks |
 | Total (after finding a property) | 2–3 months |
 
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Consult a professional for your specific situation.
-
 ## Sources
 
 -   [Federal Office for Housing (BWO)](https://www.bwo.admin.ch/bwo/en/home.html)

@@ -49,6 +49,3 @@ Every municipality has a **Zonenplan** (zoning plan) that defines what can be bu
 ## Sources
 
 -   [SECO — Lex Koller](https://www.seco.admin.ch/seco/en/home/aussenwirtschaft-wirtschaftliche-zusammenarbeit/wirtschaftsbeziehungen/grundstueckerwerb.html)
-
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Consult a professional for your specific situation.

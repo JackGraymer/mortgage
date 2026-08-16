@@ -44,6 +44,3 @@ Work through these items across the different phases of your purchase.
 -   [ ] File tax returns including the new property (imputed rental value, mortgage interest)
 -   [ ] Set up amortization payments for the 2nd mortgage
 -   [ ] Review mortgage renewal terms 3–6 months before expiry
-
-!!! warning "Not financial or legal advice"
-    This guide provides general information only. Consult a professional for your specific situation.
