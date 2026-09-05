@@ -1,0 +1,44 @@
+﻿{% extends "base.html" %}
+
+{% block extrahead %}
+  {#- Resolve page title -#}
+  {% if page.meta and page.meta.title %}
+    {% set _title = page.meta.title ~ " - " ~ config.site_name %}
+  {% elif page.title and not page.is_homepage %}
+    {% set _title = page.title | striptags ~ " - " ~ config.site_name %}
+  {% else %}
+    {% set _title = config.site_name %}
+  {% endif %}
+
+  {#- Resolve description -#}
+  {% if page.meta and page.meta.description %}
+    {% set _desc = page.meta.description %}
+  {% else %}
+    {% set _desc = config.site_description %}
+  {% endif %}
+
+  {#- Resolve canonical URL -#}
+  {% if page.canonical_url %}
+    {% set _url = page.canonical_url %}
+  {% else %}
+    {% set _url = config.site_url %}
+  {% endif %}
+
+  {#- Shared OG image -#}
+  {% set _image = config.site_url ~ "assets/images/og-card.png" %}
+
+  <!-- OpenGraph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="{{ config.site_name }}">
+  <meta property="og:title"       content="{{ _title }}">
+  <meta property="og:description" content="{{ _desc }}">
+  <meta property="og:url"         content="{{ _url }}">
+  <meta property="og:image"       content="{{ _image }}">
+  <meta property="og:locale"      content="en_GB">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="{{ _title }}">
+  <meta name="twitter:description" content="{{ _desc }}">
+  <meta name="twitter:image"       content="{{ _image }}">
+{% endblock %}

@@ -38,6 +38,7 @@ extra_javascript = [
 generator = false
 
 [project.theme]
+custom_dir = "overrides"
 language = "en"
 features = [
   "announce.dismiss",
