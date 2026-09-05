@@ -41,7 +41,7 @@ const wealthCase = estimate({
   propertyValue: 1000000,
   mortgageDebt: 650000,
   mortgageRate: 2.0,
-  pillar3a: 7256,
+  pillar3a: 7258,
   taxData,
 });
 assert.strictEqual(wealthCase.wealth, 150000, "ZH net wealth = 800k tax value - 650k debt");
@@ -71,7 +71,7 @@ const single = estimate({
   propertyValue: 1000000,
   mortgageDebt: 650000,
   mortgageRate: 2.0,
-  pillar3a: 7256,
+  pillar3a: 7258,
   taxData,
 });
 const married = estimate({
@@ -81,7 +81,7 @@ const married = estimate({
   propertyValue: 1000000,
   mortgageDebt: 650000,
   mortgageRate: 2.0,
-  pillar3a: 7256,
+  pillar3a: 7258,
   taxData,
 });
 assert.ok(single.incomeTax > married.incomeTax, "married double tariff yields lower income tax");

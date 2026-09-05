@@ -9,7 +9,7 @@ function amortizationCalc() {
     mode: "direct",
     marginalRate: 25,
     returnRate: 2,
-    withdrawalTax: 0,
+    withdrawalTax: 8,
     result: null,
     _timer: null,
 

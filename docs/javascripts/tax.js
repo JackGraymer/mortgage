@@ -12,7 +12,7 @@ function taxCalculator() {
     mortgageDebt: 650000,
     mortgageRate: 2.0,
     imputed: "",
-    pillar3a: 7256,
+    pillar3a: 7258,
     otherDeductions: 0,
     result: null,
 

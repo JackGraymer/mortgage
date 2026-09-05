@@ -1,7 +1,7 @@
 [project]
 site_url = "https://buying-house-ch.jackgraymer.workers.dev/"
 site_name = "Buying a House in Switzerland"
-site_description = "A practical, self-contained guide to buying residential property in Switzerland (Zurich and Aargau focus): legal rules, mortgages, taxes, costs and purchase process, plus built-in calculators."
+site_description = "A practical, self-contained guide to buying residential property in Switzerland (Zurich and Aargau focus, with tax rates for Solothurn and Basel-Landschaft): legal rules, mortgages, taxes, costs and purchase process, plus three built-in calculators."
 site_author = "Alvaro Cervan"
 copyright = "&copy; 2026 Alvaro Cervan"
 

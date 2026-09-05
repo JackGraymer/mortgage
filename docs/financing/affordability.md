@@ -85,7 +85,8 @@ The **stress test** is what actually decides how much you can borrow — not the
     <div class="calc-note" x-show="result.affordable" x-cloak>
       <b>Passes the stress test.</b> Housing costs use <span x-text="fmtPct(result.ratio)"></span>
       of income (≤ 33%). Rule of thumb: your target price is about
-      <span x-text="fmt(propertyValue / (income || 1))"></span> per unit of income.
+      <span x-text="income > 0 ? (propertyValue / income).toFixed(1) + '×' : '—'"></span>
+      your gross income.
     </div>
   </div>
 </div>

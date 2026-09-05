@@ -8,7 +8,7 @@ description: Swiss property taxation — imputed rental value, deductions, wealt
 Owning a home in Switzerland has significant tax consequences. The three big topics are: the **imputed rental value** on your income tax, the **wealth tax** on your net assets, and the one-off **transfer tax** when you buy (plus **gains tax** when you eventually sell).
 
 !!! tip "Skip to the estimator"
-    Use the [Tax Estimator](calculator.md) to get an approximate income + wealth tax figure for Zurich or Aargau.
+    Use the [Tax Estimator](calculator.md) to get an approximate income + wealth tax figure for Zurich, Aargau, Solothurn or Basel-Landschaft.
 
 ## Imputed rental value (Eigenmietwert / valeur locative)
 
@@ -19,14 +19,14 @@ Homeowners in Switzerland are taxed on the **imputed rental value** — the hypo
 -   The imputed value is set by the municipality, typically at **60–70% of the market rental value** (varies by canton)
 -   It applies only to the portion you occupy yourself (not to rented-out units)
 -   You can deduct **mortgage interest** and **maintenance costs** against it
--   **System under review:** The Federal Council has proposed abolishing the imputed rental value (with a corresponding loss of mortgage interest deduction). As of 2025, no change has been enacted — the system remains in force.
+-   **System under review:** The Federal Council has proposed abolishing the imputed rental value (with a corresponding loss of mortgage interest deduction). As of 2026, no change has been enacted — the system remains in force.
 
 **Example — Zurich, property value CHF 1M:**
 
 -   Imputed rental value: ~CHF 25,000–35,000/year (added to income; ~2.5–3.5% of value)
 -   Mortgage interest deduction (CHF 650k @ 2%): ~CHF 13,000/year (deducted)
--   Maintenance deduction (lump sum 10% of imputed value or actuals): ~CHF 2,500–3,500
--   **Net effect:** at current low rates, the interest deduction often roughly offsets the imputed rental value, so the net income tax burden is modest — but it grows if rates fall and you have little debt.
+-   Maintenance deduction: ~CHF 10,000/year (rule of thumb = 1% of value; alternatively the lump sum of 10–20% of imputed value)
+-   **Net effect:** the deductions offset a large part of the imputed value, leaving a modest ~CHF 9,000–12,000 of extra taxable income for a typical 80% LTV purchase at 2%. The offset shrinks if rates fall further or you hold little debt.
 
 ## Deductions
 
@@ -34,7 +34,7 @@ Homeowners in Switzerland are taxed on the **imputed rental value** — the hypo
 | --------- | ------- |
 | **Mortgage interest** | Fully deductible for 1st and 2nd mortgages (and any other debt secured on the property) |
 | **Maintenance & renovation** | Actual costs deductible. Most cantons allow a **lump-sum deduction** instead: e.g., Zurich: 10% of imputed rental value (properties <10 yr) or 20% (older); Aargau: 10–20% depending on age. Lump sum is simpler and often higher for older properties. |
-| **Pillar 3a contributions** | Deductible up to the annual limit (CHF 7,256 in 2025 for employees with pension fund) |
+| **Pillar 3a contributions** | Deductible up to the annual limit (CHF 7,258 in 2026 for employees with pension fund) |
 | **Energy-efficient renovations** | Enhanced deductions for eco-friendly upgrades (heat pump, solar, insulation, windows) in most cantons — often 100% deductible in the year incurred, even if they increase property value |
 | **Insurance premiums** | Building insurance, liability insurance premiums partially deductible (varies by canton) |
 | **Admin/management costs** | Property management fees, accounting for rental units |
@@ -71,6 +71,8 @@ Real estate is included in your **wealth tax** calculation (cantonal/communal, n
 
 -   **Zurich:** real estate is valued at **tax value** (Steuerwert), which is typically **70–85% of market value** (set by tax authority)
 -   **Aargau:** similar approach; tax value is typically **75–90% of market value**
+-   **Solothurn:** tax value is typically **~85–100% of market value** (close to market)
+-   **Basel-Landschaft:** tax value is typically **75–90% of market value**
 -   Tax is calculated on **net wealth** (total assets minus total debt, including mortgages)
 -   Mortgage debt is fully deductible from wealth
 
@@ -80,6 +82,8 @@ Because mortgage debt is deducted from wealth, a highly leveraged purchase reduc
 | ------ | --------------------- | ------------------------------------------ |
 | **Zurich** | ~70–85% | Progressive, ~0.1–0.35% on net wealth > CHF 100k (single) |
 | **Aargau** | ~75–90% | Progressive, ~0.1–0.3% on net wealth > CHF 100k (single) |
+| **Solothurn** | ~85–100% | Progressive, ~0.1–0.3% on net wealth > CHF 100k (single) |
+| **Basel-Landschaft** | ~75–90% | Progressive, ~0.1–0.4% on net wealth > CHF 100k (single) |
 
 !!! note "Tax value vs. market value"
     The tax authority's valuation (Steuerwert) is usually well below market value. This is a significant advantage for wealth tax purposes.
@@ -104,22 +108,8 @@ Due when the property changes hands (paid by buyer in most cantons):
 !!! note
     Some cantons (e.g. Schwyz, Zurich) have very low or no cantonal transfer tax, making them attractive for transactions. Always check the **municipal** rate as well — it can differ from the cantonal rate. First-time buyers may qualify for reductions in some cantons.
 
-## Notary and land register fees
-
-| Fee type | Typical cost |
-| -------- | ------------ |
-| **Notary fees** | 0.1–0.5% of purchase price (varies by canton; often fixed tariff) |
-| **Land register entry (Grundbuch)** | 0.1–0.3% of purchase price |
-
-| Canton | Notary + Land Register (combined, typical) |
-| ------ | ------------------------------------------ |
-| **Zurich** | ~0.5–0.8% of purchase price (notary ~0.1–0.25%, land register ~0.1–0.3%) |
-| **Aargau** | ~0.6–1.0% of purchase price |
-| **Zug** | ~0.5–0.8% |
-| **Lucerne** | ~0.5–0.8% |
-
-!!! tip "Notary choice"
-    In most cantons you can choose your notary. Fees are regulated but can vary slightly. Ask for a cost estimate (Kostenvoranschlag) upfront.
+!!! note "Notary & land register fees"
+    Notary and land-register fees are buyer transaction costs rather than taxes — see the [Costs & Fees](../costs.md) breakdown for typical ranges and canton examples.
 
 ## Inheritance & gift tax (Erbschafts- & Schenkungssteuer)
 
@@ -145,7 +135,7 @@ Inheritance and gift taxes are **cantonal/communal** (no federal tax). Key point
 
 ## Estimate your tax
 
-[Open the Tax Estimator](calculator.md) for an approximate income + wealth tax figure for Zurich or Aargau.
+[Open the Tax Estimator](calculator.md) for an approximate income + wealth tax figure for Zurich, Aargau, Solothurn or Basel-Landschaft.
 
 ## Sources
 

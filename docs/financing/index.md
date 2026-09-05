@@ -25,7 +25,7 @@ The **total loan-to-value (LTV)** cannot exceed **80%** of the property value (b
     The 1st mortgage (the bottom 65%) is typically **never amortized** — you pay interest on it for as long as you own the property. Only the 2nd mortgage (the portion between 65% and 80% LTV) is paid down, usually linearly over 15 years. Many owners pay off the 2nd mortgage and then hold the property interest-only.
 
 !!! info "Indirect amortization via Pillar 3a"
-    Instead of paying down the 2nd mortgage directly, you can pay the amortization amount into a **Pillar 3a** account (or life insurance) pledged to the bank. The 2nd mortgage balance stays constant, but your pledged assets grow. At the end of the term (or retirement), the 3a assets repay the 2nd mortgage. Tax advantage: Pillar 3a contributions are deductible from taxable income (up to CHF 7,256/year for employees in 2025).
+    Instead of paying down the 2nd mortgage directly, you can pay the amortization amount into a **Pillar 3a** account (or life insurance) pledged to the bank. The 2nd mortgage balance stays constant, but your pledged assets grow. At the end of the term (or retirement), the 3a assets repay the 2nd mortgage. Tax advantage: Pillar 3a contributions are deductible from taxable income (up to CHF 7,258/year for employees in 2026).
 
 ## Equity requirements
 
@@ -55,7 +55,7 @@ Banks apply a strict **affordability test**: total housing costs must not exceed
 -   Imputed mortgage interest at a **stress rate** (typically **5%**, even if the actual rate is lower) on the *total* mortgage amount
 -   Amortization of the 2nd mortgage (linear over chosen term, typically 15 years = ~6.7% of 2nd mortgage p.a., or 1% of property value as rule of thumb)
 -   Maintenance costs (typically 1% of the property value per year)
--   Heating and ancillary costs (Nebenkosten, typically CHF 3,000–5,000/year for a house)
+-   Heating and ancillary costs (Nebenkosten, typically CHF 3,000–5,000/year for a house; more for larger or older properties)
 
 **Example — property CHF 1,000,000, mortgage CHF 800,000 (65% 1st + 15% 2nd):**
 
@@ -102,7 +102,7 @@ Required minimum income at the 33% ratio: **CHF 194,000 / year**.
 -   Can be fully withdrawn for the purchase of a principal residence (owner-occupied)
 -   The withdrawal is taxed separately at a reduced capital withdrawal tax rate (cantonal, typically 5–10%)
 -   Can also be pledged as collateral (preferred for tax efficiency)
--   Annual contribution limit 2025: **CHF 7,256** (employees with pension fund) / **CHF 36,288** (self-employed without pension fund)
+-   Annual contribution limit 2026: **CHF 7,258** (employees with pension fund) / **CHF 36,288** (self-employed without pension fund)
 -   Indirect amortization: pay the 2nd mortgage amortization into a 3a account pledged to the bank → tax deduction + asset buildup
 
 !!! warning "Think before withdrawing pension money"

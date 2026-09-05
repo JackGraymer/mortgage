@@ -117,15 +117,15 @@ The effective-rate data lives in `tax-data.js` — if you later obtain the offic
 | Property value | CHF 1,000,000 |
 | Mortgage debt | CHF 650,000 |
 | Rate | 2% |
-| Pillar 3a | CHF 7,256 |
+| Pillar 3a | CHF 7,258 |
 
-**Rough result:**
+**Rough result (as the estimator computes it):**
 
-- Imputed rental value: CHF 35,000 (auto, 3.5%) → taxable income ≈ CHF 120,000 + 35,000 − 13,000 (interest) − 10,000 (maintenance 1%) − 7,256 (3a) ≈ **CHF 124,744**
+- Imputed rental value: CHF 35,000 (auto, 3.5%) → taxable income ≈ CHF 120,000 + 35,000 − 13,000 (interest) − 10,000 (maintenance 1%) − 7,258 (3a) ≈ **CHF 124,742**
 - Property tax value (est. 80%): CHF 800,000 → net wealth = CHF 800,000 − 650,000 = **CHF 150,000**
-- Effective income-tax rate ≈ **~12.5%** → income tax ≈ **CHF 15,600**
-- Wealth tax rate on CHF 150k ≈ **~0.2%** → wealth tax ≈ **CHF 300**
-- **Total estimated tax ≈ CHF 15,900/yr (~CHF 1,325/month)**
+- Effective income-tax rate ≈ **~11.4%** → income tax ≈ **CHF 14,170**
+- Wealth tax rate on CHF 150k ≈ **~0.13%** → wealth tax ≈ **CHF 190**
+- **Total estimated tax ≈ CHF 14,360/yr (~CHF 1,200/month)**
 
 !!! note "Reality check"
     Exact figures depend on the official tariff table, your municipal multiplier (Gemeindesteuerfuss), and deductions such as pension contributions, insurance premiums, and commuting costs. Use the estimate as a budgeting guide, not as a tax filing.

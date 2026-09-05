@@ -15,7 +15,7 @@ Switzerland has one of the most stable real estate markets in Europe, driven by 
 -   A well-regulated banking system with strong consumer protections
 
 !!! info "Focus of this guide"
-    This guide focuses on the cantons of **Zurich (ZH)** and **Aargau (AG)**. The underlying rules are largely national, but every canton sets its own tax rates, fees and parts of the purchase procedure.
+    This guide focuses on the cantons of **Zurich (ZH)** and **Aargau (AG)**, with tax rates also provided for **Solothurn (SO)** and **Basel-Landschaft (BL)**. The underlying rules are largely national, but every canton sets its own tax rates, fees and parts of the purchase procedure.
 
 ## Why the market behaves the way it does
 
@@ -30,7 +30,7 @@ Several structural factors keep Swiss property prices high and ownership rates l
 
 Swiss mortgage rates are anchored to the Swiss National Bank (SNB) policy rate and the **SARON** (Swiss Average Rate Overnight) benchmark. Key facts:
 
--   After a long period of negative/near-zero policy rates (2015–2022), the SNB raised rates through 2023 to 1.75%, then began cutting in 2024. As of 2025, the SNB policy rate stands at **1.0%**.
+-   After a long period of negative/near-zero policy rates (2015–2022), the SNB raised rates through 2023 to 1.75%, then cut them through 2024–2025. The policy rate has been at **0% since June 2025** and was held there through 2026 (SARON has traded slightly below zero).
 -   Fixed-rate mortgages (2, 3, 5, 7, 10 or 15 years) are priced off long-term swap rates and remain the most popular choice (≈80% of new mortgages).
 -   SARON mortgages track the overnight benchmark (compounded 3M SARON) plus a bank margin. They are typically cheaper initially but expose borrowers to rate risk.
 -   **Forward SARON** and **SARON rollover** products exist for borrowers wanting variable exposure with some predictability.
@@ -70,3 +70,5 @@ Switzerland is phasing out fossil-fuel heating. Key rules affecting buyers:
 2.  [Financing & Mortgages](financing/index.md) — how much can you afford?
 3.  [Taxation](taxation/index.md) — what will you pay to hold the property?
 4.  [Purchase Process](process.md) — how the purchase actually happens.
+
+Once you have numbers in mind, use the [Affordability Calculator](financing/affordability.md), the [Amortization Calculator](financing/calculator.md) and the [Tax Estimator](taxation/calculator.md) to model your own situation.

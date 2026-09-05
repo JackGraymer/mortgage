@@ -1,6 +1,6 @@
 ---
 title: Amortization Calculator
-description: Model a Swiss mortgage — interest-only 1st mortgage plus a linearly amortized 2nd mortgage — and see total interest, principal and monthly costs.
+description: Model a Swiss mortgage — interest-only 1st mortgage plus a linearly amortized 2nd mortgage — and compare direct vs. Pillar 3a (indirect) amortization.
 ---
 
 # Amortization Calculator
@@ -65,7 +65,9 @@ Model your Swiss mortgage. The calculator follows the standard Swiss structure: 
     <div class="calc-note">
       Loan-to-value: <b x-text="fmtPct(ltv)"></b> &nbsp;·&nbsp; 1st mortgage:
       <b x-text="fmt(result.first)"></b> (interest-only) &nbsp;·&nbsp; 2nd mortgage:
-      <b x-text="fmt(result.second)"></b> (amortized over <span x-text="years"></span> years)
+      <b x-text="fmt(result.second)"></b>
+      <span x-show="mode === 'direct'" x-cloak> (amortized over <span x-text="years"></span> years)</span>
+      <span x-show="mode === 'indirect'" x-cloak> (kept open — repaid from your pledged Pillar 3a)</span>
     </div>
 
     <div class="calc-stats" x-show="mode === 'direct'">
@@ -122,7 +124,7 @@ Model your Swiss mortgage. The calculator follows the standard Swiss structure: 
       <canvas x-ref="chart"></canvas>
     </div>
 
-    <div class="calc-table-wrap">
+    <div class="calc-table-wrap" x-show="mode === 'direct'" x-cloak>
       <table>
         <thead>
           <tr>
@@ -149,10 +151,16 @@ Model your Swiss mortgage. The calculator follows the standard Swiss structure: 
       </table>
     </div>
 
-    <p class="calc-note">
+    <p class="calc-note" x-show="mode === 'direct'" x-cloak>
       "Total paid", "Total interest" and "Avg monthly payment" cover only the
       <b>amortization period</b>. The 1st mortgage is interest-only and continues after the term —
       its annual interest is shown under "Interest after term / yr".
+    </p>
+    <p class="calc-note" x-show="mode === 'indirect'" x-cloak>
+      In indirect mode the 2nd mortgage is not amortized, so there is no yearly repayment
+      schedule. The chart instead tracks your constant debt against the pledged
+      <b>Pillar 3a balance (plus tax savings)</b>; at the end of the term the 3a repays the
+      2nd mortgage. Interest on the 2nd mortgage continues until then.
     </p>
   </div>
 </div>
@@ -177,7 +185,7 @@ Use the **Amortization type** selector to compare the two ways of servicing the 
 Because the 2nd mortgage stays constant, indirect amortization costs **more interest** — but if the 3a return plus the tax deduction outweigh that extra interest, you end up with **more net wealth** (the "Net benefit vs. direct" figure). Key assumptions you can adjust: marginal tax rate, 3a return and the capital-withdrawal tax applied when the 3a is finally used.
 
 !!! warning "Assumptions matter"
-    The indirect path only wins if the 3a return exceeds the mortgage rate by enough to cover the extra interest and the withdrawal tax. The 3a contribution is also capped (CHF 7,256/year in 2025 for employees); if your 2nd mortgage is large, the excess must go somewhere else or the comparison changes.
+    The indirect path only wins if the 3a return exceeds the mortgage rate by enough to cover the extra interest and the withdrawal tax. The 3a contribution is also capped (CHF 7,258/year in 2026 for employees); if your 2nd mortgage is large, the excess must go somewhere else or the comparison changes.
 
 ## Worked example — CHF 1,000,000 property
 
@@ -206,7 +214,7 @@ The scenario used in the [Financing guide](index.md):
 
 | Rate | 1st mortgage interest/yr | 2nd mortgage interest/yr (avg) | Total interest/yr (avg) | Monthly (incl. amortization) |
 | ---- | ------------------------ | ------------------------------ | ----------------------- | ---------------------------- |
-| **2% (actual)** | CHF 13,000 | ~CHF 1,500 | ~CHF 14,500 | ~CHF 2,050 |
-| **5% (stress)** | CHF 32,500 | ~CHF 3,750 | ~CHF 36,250 | ~CHF 4,020 |
+| **2% (actual)** | CHF 13,000 | ~CHF 1,600 | ~CHF 14,600 | ~CHF 2,050 |
+| **5% (stress)** | CHF 32,500 | ~CHF 4,000 | ~CHF 36,500 | ~CHF 3,875 |
 
 The stress test uses 5% on the *entire* CHF 800k mortgage = CHF 40,000/yr interest + CHF 10,000 amortization + maintenance/ancillary → determines your borrowing capacity.

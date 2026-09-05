@@ -60,9 +60,9 @@ Every municipality has a **Zonenplan** (zoning plan) that defines what can be bu
 
 ## Building regulations & energy certificate (GEAK/CECB)
 
--   **GEAK / CECB** (Gebäudeenergieausweis der Kantone / Certificat énergétique cantonal du bâtiment): mandatory energy performance certificate for all buildings in most cantons when selling, renting, or doing major renovations. Grades A–G (A = best).
--   **Minergie standard:** Voluntary low-energy building standard; often required for new builds in some municipalities.
--   **Cantonal energy laws:** Most cantons now require renewable heating replacement (heat pump, district heating, wood) when oil/gas boilers fail. Check local rules before buying an older property with fossil-fuel heating.
+-   **GEAK / CECB** (Gebäudeenergieausweis der Kantone / Certificat énergétique cantonal du bâtiment): mandatory energy certificate when selling, renting, or doing major renovations in most cantons — check the grade (A–G, A = best) before buying an older property.
+-   **Cantonal energy laws:** Most cantons now require renewable heating replacement (heat pump, district heating, wood) when oil/gas boilers fail; deadlines vary by canton.
+-   For the buyer-side costs, subsidies and tax deductions on energy upgrades, see [Overview — Energy & renovation requirements](../overview.md) and [Taxation — Deductions](../taxation/index.md).
 
 ## Sources
 

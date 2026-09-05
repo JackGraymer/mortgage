@@ -5,10 +5,10 @@ description: A practical guide to buying a house in Switzerland — legal rules,
 
 # Buying a House in Switzerland
 
-A practical, self-contained guide to purchasing residential property in Switzerland, with a focus on **Zurich** and **Aargau**. It covers regulations, taxation, the banking system and mortgage loans — and includes two calculators that run entirely in your browser.
+A practical, self-contained guide to purchasing residential property in Switzerland, with a focus on **Zurich** and **Aargau**. It covers regulations, taxation, the banking system and mortgage loans — and includes three calculators that run entirely in your browser.
 
 !!! tip "Start here"
-    If you are at the very beginning, read the [Overview](overview.md) and then [Financing & Mortgages](financing/index.md). Once you have numbers in mind, open the [Amortization Calculator](financing/calculator.md) and the [Tax Estimator](taxation/calculator.md).
+    If you are at the very beginning, read the [Overview](overview.md) and then [Financing & Mortgages](financing/index.md). Once you have numbers in mind, open the [Affordability Calculator](financing/affordability.md), the [Amortization Calculator](financing/calculator.md) and the [Tax Estimator](taxation/calculator.md).
 
 ## What this guide covers
 
@@ -46,6 +46,14 @@ A practical, self-contained guide to purchasing residential property in Switzerl
 
     [:octicons-arrow-right-24: Open the calculator](financing/calculator.md)
 
+-   :material-speedometer:{ .lg .middle } __Affordability Calculator__
+
+    ---
+
+    The maximum property your income supports under the bank's 5% stress test.
+
+    [:octicons-arrow-right-24: Open the calculator](financing/affordability.md)
+
 -   :material-file-percent-outline:{ .lg .middle } __Taxation__
 
     ---
@@ -58,7 +66,7 @@ A practical, self-contained guide to purchasing residential property in Switzerl
 
     ---
 
-    Estimate your income and wealth tax for Zurich and Aargau.
+    Estimate your income and wealth tax for Zurich, Aargau, Solothurn or Basel-Landschaft.
 
     [:octicons-arrow-right-24: Open the estimator](taxation/calculator.md)
 

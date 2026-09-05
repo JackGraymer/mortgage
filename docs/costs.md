@@ -37,6 +37,23 @@ The purchase price is only part of the total. Plan for **1–4% of the purchase 
 !!! example "Worked example — CHF 1,000,000 in Aargau"
     Transfer tax at ~1.2%: CHF 12,000 · Notary + land register at ~0.8%: CHF 8,000 · Mortgage setup: ~CHF 1,500 · Valuation: ~CHF 1,000 → **≈ CHF 22,500** (~2.25%) of closing costs on top of the price.
 
+## Notary and land register fees
+
+| Fee type | Typical cost |
+| -------- | ------------ |
+| **Notary fees** | 0.1–0.5% of purchase price (varies by canton; often fixed tariff) |
+| **Land register entry (Grundbuch)** | 0.1–0.3% of purchase price |
+
+| Canton | Notary + Land Register (combined, typical) |
+| ------ | ------------------------------------------ |
+| **Zurich** | ~0.5–0.8% of purchase price (notary ~0.1–0.25%, land register ~0.1–0.3%) |
+| **Aargau** | ~0.6–1.0% of purchase price |
+| **Zug** | ~0.5–0.8% |
+| **Lucerne** | ~0.5–0.8% |
+
+!!! tip "Notary choice"
+    In most cantons you can choose your notary. Fees are regulated but can vary slightly. Ask for a cost estimate (Kostenvoranschlag) upfront.
+
 ## Ongoing annual costs (budgeting)
 
 | Cost item | Typical annual amount |
@@ -52,11 +69,11 @@ The purchase price is only part of the total. Plan for **1–4% of the purchase 
 
 ## Budgeting checklist
 
--   [ ] 20% equity (10% hard cash + 10% Pillar 2/3a) for the deposit and purchase
--   [ ] Closing costs: 1–4% of the price in cash (varies heavily by canton)
--   [ ] Moving costs and immediate repairs/renovations
--   [ ] Ongoing costs: interest, amortization, maintenance, heating, insurance (see [Financing](financing/index.md))
--   [ ] Tax impact: imputed rental value, wealth tax (see [Taxation](taxation/index.md))
+-   **Equity** — 20% (10% hard cash + 10% Pillar 2/3a) for the deposit and purchase
+-   **Closing costs** — 1–4% of the price in cash (varies heavily by canton)
+-   **Move-in budget** — moving costs and immediate repairs/renovations
+-   **Ongoing costs** — interest, amortization, maintenance, heating, insurance (see [Financing](financing/index.md))
+-   **Tax impact** — imputed rental value, wealth tax (see [Taxation](taxation/index.md))
 
 ## Sources
 
