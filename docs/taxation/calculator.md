@@ -1,11 +1,11 @@
 ---
 title: Tax Estimator
-description: Estimate your combined federal + cantonal + communal income tax and wealth tax for a home in Zurich or Aargau.
+description: Estimate your combined federal + cantonal + communal income tax and wealth tax for a home in Zurich, Aargau, Solothurn or Basel-Landschaft.
 ---
 
 # Tax Estimator
 
-Estimate the annual income and wealth tax you would pay when owning a home in **Zurich** or **Aargau**. The estimator models the **imputed rental value**, the standard deductions (mortgage interest, maintenance, Pillar 3a) and simplified effective tax rates. Everything runs locally in your browser.
+Estimate the annual income and wealth tax you would pay when owning a home in **Zurich**, **Aargau**, **Solothurn** or **Basel-Landschaft**. The estimator models the **imputed rental value**, the standard deductions (mortgage interest, maintenance, Pillar 3a) and simplified effective tax rates. Everything runs locally in your browser.
 
 !!! warning "Estimate only"
     This tool uses simplified effective-rate curves (federal + cantonal + communal combined) and a **3.5% imputed rental value** approximation. Real tax bills depend on your exact municipality (Gemeinde), official tariff tables, family situation, and all applicable deductions. Use for budgeting only — not for filing.
@@ -18,6 +18,8 @@ Estimate the annual income and wealth tax you would pay when owning a home in **
       <select x-model="canton" @change="calculate()">
         <option value="ZH">Zurich</option>
         <option value="AG">Aargau</option>
+        <option value="SO">Solothurn</option>
+        <option value="BL">Basel-Landschaft</option>
       </select>
     </div>
     <div class="calc-field">
@@ -90,7 +92,7 @@ Estimate the annual income and wealth tax you would pay when owning a home in **
 
     <p class="calc-note">
       Taxable income = gross income + imputed rental value − mortgage interest − maintenance (1% of value)
-      − Pillar 3a − other deductions. Net wealth = property tax value (est. 80% ZH / 85% AG of market) − mortgage debt.
+      − Pillar 3a − other deductions. Net wealth = property tax value (est. 80% ZH / 85% AG·BL / 90% SO of market) − mortgage debt.
     </p>
   </div>
 </div>
@@ -101,7 +103,7 @@ Estimate the annual income and wealth tax you would pay when owning a home in **
 2.  **Deductions** are subtracted: mortgage interest (debt × rate), maintenance (1% of value or lump-sum % of imputed value), Pillar 3a, and any other deductions.
 3.  **Income tax** = taxable income × an effective rate read from a simplified curve per canton (federal + cantonal + communal combined). For married couples, a double-tariff approximation is applied (taxed as if half the income).
 4.  **Wealth tax** = net wealth (property tax value − debt) × an effective wealth-tax curve per canton.
-    - Property **tax value** (Steuerwert) is used, not market value: typically **70–85% of market value in ZH**, **75–90% in AG**.
+    - Property **tax value** (Steuerwert) is used, not market value: typically **70–85% of market value in ZH**, **75–90% in AG and BL**, **~85–100% in SO**.
 
 The effective-rate data lives in `tax-data.js` — if you later obtain the official tariff tables, you can replace the curves without touching the page.
 
@@ -132,3 +134,5 @@ The effective-rate data lives in `tax-data.js` — if you later obtain the offic
 
 -   [Zurich — Cantonal Tax Office](https://www.zh.ch/en/steuern-finanzen.html)
 -   [Aargau — Cantonal Tax Office](https://www.ag.ch/en/verwaltung/finance-department/cantonal-tax-administration-1)
+-   [Solothurn — Cantonal Tax Office](https://steuern.so.ch/)
+-   [Basel-Landschaft — Cantonal Tax Office](https://www.steuern.bl.ch/)

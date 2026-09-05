@@ -42,7 +42,7 @@ function taxCalculator() {
     },
     getTaxValueFactor() {
       // Tax value (Steuerwert) as % of market value
-      return this.canton === "ZH" ? 0.80 : 0.85; // ZH: ~70-85%, AG: ~75-90%
+      return this.canton === "ZH" ? 0.80 : this.canton === "SO" ? 0.90 : 0.85; // ZH: ~70-85%, AG/BL: ~75-90%, SO: ~85-100%
     },
     netWealth() {
       const propertyValue = parseFloat(this.propertyValue) || 0;
