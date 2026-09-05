@@ -6,6 +6,10 @@ function amortizationCalc() {
     equity: 200000,
     rate: 2.0,
     years: 15,
+    mode: "direct",
+    marginalRate: 25,
+    returnRate: 2,
+    withdrawalTax: 0,
     result: null,
     _timer: null,
 
@@ -25,6 +29,20 @@ function amortizationCalc() {
     },
     get hardCashWarning() {
       return this.equityPct < 0.1;
+    },
+
+    // Direct vs. indirect (Pillar 3a) comparison, based on the current
+    // amortization schedule's 2nd mortgage.
+    get p3a() {
+      if (!this.result) return null;
+      return window.pillar3aCore.collect({
+        second: this.result.second,
+        years: parseInt(this.years, 10) || 15,
+        rate: (parseFloat(this.rate) || 0) / 100,
+        marginalRate: (parseFloat(this.marginalRate) || 0) / 100,
+        returnRate: (parseFloat(this.returnRate) || 0) / 100,
+        withdrawalTax: (parseFloat(this.withdrawalTax) || 0) / 100,
+      });
     },
 
     init() {
@@ -52,6 +70,10 @@ function amortizationCalc() {
     renderChart() {
       const el = this.$refs.chart;
       if (!el || typeof Chart === "undefined" || !this.result) return;
+      if (this.mode === "indirect") {
+        this.renderIndirectChart();
+        return;
+      }
 
       const r = this.result;
       const labels = r.rows.map((x) => "Y" + x.year);
@@ -97,20 +119,102 @@ function amortizationCalc() {
             },
           ],
         },
-        options: {
-          responsive: true,
-          animation: false,
-          interaction: { mode: "index", intersect: false },
-          scales: {
-            y: {
-              stacked: false,
-              ticks: { callback: (v) => "CHF " + Number(v).toLocaleString("de-CH") },
-            },
-            x: { stacked: false },
-          },
-          plugins: { legend: { position: "top" } },
-        },
+        options: this.chartOptions(),
       });
+    },
+
+    // Indirect mode: 2nd mortgage stays constant while pledged 3a assets grow.
+    renderIndirectChart() {
+      const r = this.result;
+      if (_chart) {
+        _chart.destroy();
+        _chart = null;
+      }
+
+      const years = parseInt(this.years, 10) || 0;
+      if (years <= 0) return;
+
+      const rate = (parseFloat(this.rate) || 0) / 100;
+      const returnRate = (parseFloat(this.returnRate) || 0) / 100;
+      const marginalRate = (parseFloat(this.marginalRate) || 0) / 100;
+      const labels = [];
+      const threeA = [];
+      const contributions = [];
+      const interest = [];
+
+      const annualContribution = r.second / years;
+      const effectiveContribution = annualContribution * (1 + marginalRate);
+      const totalDebt = r.first + r.second;
+
+      for (let y = 1; y <= years; y++) {
+        labels.push("Y" + y);
+        threeA.push(window.pillar3aCore.round2(window.pillar3aCore.annuityFV(effectiveContribution, returnRate, y)));
+        contributions.push(window.pillar3aCore.round2(effectiveContribution));
+        interest.push(window.pillar3aCore.round2(totalDebt * rate));
+      }
+
+      _chart = new Chart(el, {
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              type: "line",
+              label: "Remaining debt (constant)",
+              data: window.amortizationCore ? Array(years).fill(totalDebt) : [],
+              borderColor: "#e11d48",
+              backgroundColor: "#e11d48",
+              yAxisID: "y",
+              pointRadius: 1,
+              tension: 0.2,
+              order: 0,
+            },
+            {
+              type: "line",
+              label: "Pillar 3a + tax savings",
+              data: threeA,
+              borderColor: "#7c3aed",
+              backgroundColor: "#7c3aed",
+              yAxisID: "y",
+              pointRadius: 1,
+              tension: 0.2,
+              order: 0,
+            },
+            {
+              type: "bar",
+              label: "Interest paid",
+              data: interest,
+              backgroundColor: "rgba(37, 99, 235, 0.75)",
+              yAxisID: "y",
+              order: 1,
+            },
+            {
+              type: "bar",
+              label: "Annual contribution",
+              data: contributions,
+              backgroundColor: "rgba(16, 185, 129, 0.75)",
+              yAxisID: "y",
+              order: 1,
+            },
+          ],
+        },
+        options: this.chartOptions(),
+      });
+    },
+
+    chartOptions() {
+      return {
+        responsive: true,
+        animation: false,
+        interaction: { mode: "index", intersect: false },
+        scales: {
+          y: {
+            stacked: false,
+            ticks: { callback: (v) => "CHF " + Number(v).toLocaleString("de-CH") },
+          },
+          x: { stacked: false },
+        },
+        plugins: { legend: { position: "top" } },
+      };
     },
 
     fmt(n) {

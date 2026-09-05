@@ -28,6 +28,31 @@ Model your Swiss mortgage. The calculator follows the standard Swiss structure: 
     </div>
   </div>
 
+  <div class="calc-grid">
+    <div class="calc-field">
+      <label>Amortization type</label>
+      <select x-model="mode" @change="recalc()">
+        <option value="direct">Direct — repay 2nd mortgage</option>
+        <option value="indirect">Indirect — invest in Pillar 3a</option>
+      </select>
+      <div class="calc-range-value">
+        Indirect keeps the 2nd mortgage and builds a pledged 3a account instead.
+      </div>
+    </div>
+    <div class="calc-field" x-show="mode === 'indirect'">
+      <label>Marginal tax rate (% p.a.)</label>
+      <input type="number" x-model.number="marginalRate" min="0" max="50" step="1" @input="recalc()">
+    </div>
+    <div class="calc-field" x-show="mode === 'indirect'">
+      <label>Pillar 3a return (% p.a.)</label>
+      <input type="number" x-model.number="returnRate" min="0" max="15" step="0.25" @input="recalc()">
+    </div>
+    <div class="calc-field" x-show="mode === 'indirect'">
+      <label>3a withdrawal tax (%)</label>
+      <input type="number" x-model.number="withdrawalTax" min="0" max="30" step="0.5" @input="recalc()">
+    </div>
+  </div>
+
   <div class="calc-warning" x-show="ltvWarning" x-cloak>
     Requires more equity — banks cap the loan at 80% loan-to-value (LTV). Add at least
     <span x-text="fmt(Math.round(propertyValue * 0.2 - (propertyValue - mortgage)))"></span>.
@@ -43,7 +68,7 @@ Model your Swiss mortgage. The calculator follows the standard Swiss structure: 
       <b x-text="fmt(result.second)"></b> (amortized over <span x-text="years"></span> years)
     </div>
 
-    <div class="calc-stats">
+    <div class="calc-stats" x-show="mode === 'direct'">
       <div class="calc-stat">
         <div class="calc-stat-label">Total paid</div>
         <div class="calc-stat-value" x-text="fmt(result.totalPaid)"></div>
@@ -63,6 +88,33 @@ Model your Swiss mortgage. The calculator follows the standard Swiss structure: 
       <div class="calc-stat">
         <div class="calc-stat-label">Interest after term / yr</div>
         <div class="calc-stat-value" x-text="fmt(result.ongoingAnnualInterest)"></div>
+      </div>
+    </div>
+
+    <div class="calc-stats" x-show="mode === 'indirect' && p3a" x-cloak>
+      <div class="calc-stat">
+        <div class="calc-stat-label">3a + tax savings at end</div>
+        <div class="calc-stat-value" x-text="fmt(p3a.threeAFV + p3a.taxSavingsFV)"></div>
+      </div>
+      <div class="calc-stat">
+        <div class="calc-stat-label">Tax saved (compounded)</div>
+        <div class="calc-stat-value" x-text="fmt(p3a.taxSavingsFV)"></div>
+      </div>
+      <div class="calc-stat">
+        <div class="calc-stat-label">3a withdrawal tax</div>
+        <div class="calc-stat-value" x-text="fmt(p3a.taxOnWithdrawal)"></div>
+      </div>
+      <div class="calc-stat">
+        <div class="calc-stat-label">Leftover after repaying 2nd mortgage</div>
+        <div class="calc-stat-value" x-text="fmt(p3a.netPosition)"></div>
+      </div>
+      <div class="calc-stat">
+        <div class="calc-stat-label">Net benefit vs. direct</div>
+        <div class="calc-stat-value" x-text="fmt(p3a.benefit)"></div>
+      </div>
+      <div class="calc-stat">
+        <div class="calc-stat-label">2nd-mortgage interest: indirect vs. direct</div>
+        <div class="calc-stat-value" x-text="fmt(p3a.interestIndirect) + ' / ' + fmt(p3a.interestDirect)"></div>
       </div>
     </div>
 
@@ -114,6 +166,18 @@ The calculator implements the standard Swiss financing structure:
 3.  **2nd mortgage** = the remainder. It is amortized **linearly** (equal principal each year) over the term you choose — typically 15 years.
 
 The chart shows, per year: interest paid (blue), principal repaid (green) and the remaining debt (red line). Note that interest declines each year because the 2nd mortgage shrinks, while the 1st mortgage interest stays constant.
+
+### Direct vs. indirect (Pillar 3a) amortization
+
+Use the **Amortization type** selector to compare the two ways of servicing the 2nd mortgage:
+
+- **Direct** — you repay the 2nd mortgage linearly; debt declines and so does the interest (the default view above).
+- **Indirect** — you keep the 2nd mortgage at its full balance and instead pay the same principal amount into a **Pillar 3a account pledged to the bank** each year. You get a **tax deduction** on those contributions (at your marginal rate) and the account **earns a return**. At the end of the term you repay the 2nd mortgage from the 3a account.
+
+Because the 2nd mortgage stays constant, indirect amortization costs **more interest** — but if the 3a return plus the tax deduction outweigh that extra interest, you end up with **more net wealth** (the "Net benefit vs. direct" figure). Key assumptions you can adjust: marginal tax rate, 3a return and the capital-withdrawal tax applied when the 3a is finally used.
+
+!!! warning "Assumptions matter"
+    The indirect path only wins if the 3a return exceeds the mortgage rate by enough to cover the extra interest and the withdrawal tax. The 3a contribution is also capped (CHF 7,256/year in 2025 for employees); if your 2nd mortgage is large, the excess must go somewhere else or the comparison changes.
 
 ## Worked example — CHF 1,000,000 property
 
