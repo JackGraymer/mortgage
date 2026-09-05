@@ -6,18 +6,22 @@ on:
   pull_request:
     branches: [master]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   # ── JavaScript unit tests ─────────────────────────────────────────────────
   test:
     name: JavaScript unit tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: Run all tests
         run: node tests/run_all_tests.mjs
@@ -28,10 +32,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -43,13 +47,15 @@ jobs:
         run: zensical build
 
       - name: Upload built site artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: site
           path: site/
           retention-days: 7
 
-  # ── Deploy to Cloudflare (master only) ───────────────────────────────────
+  # ── Deploy to Cloudflare (master only) ────────────────────────────────────
+  # Single deployment path: the Cloudflare dashboard Git integration must be
+  # disconnected so two pipelines never race on the same Worker.
   deploy:
     name: Deploy to Cloudflare Workers
     runs-on: ubuntu-latest
@@ -58,18 +64,20 @@ jobs:
     permissions:
       contents: read
       deployments: write
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5
 
       - name: Download built site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: site
           path: site/
 
       - name: Deploy via Wrangler
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+          wranglerVersion: "4"
