@@ -94,13 +94,13 @@ A practical, self-contained guide to purchasing residential property in Switzerl
 
     [:octicons-arrow-right-24: Open the checklist](checklist.md)
 
--   :material-home-search:{ .lg .middle } __Visiting & Inspecting__
+-   :material-home-search:{ .lg .middle } __Visiting a House__
 
     ---
 
-    What to ask and check before and during a house visit — plus a scorecard for comparing candidates.
+    A three-part guide: homework before the visit, a senses-based inspection, and deciding like a buyer afterwards.
 
-    [:octicons-arrow-right-24: Read the visit guide](visits/index.md)
+    [:octicons-arrow-right-24: Read the visit guides](visits/index.md)
 
 -   :material-star-four-points:{ .lg .middle } __Viewing Scorecard__
 

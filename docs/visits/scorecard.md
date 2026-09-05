@@ -98,7 +98,7 @@ A weighted tool for comparing the homes you visit — so you decide on facts, no
 | Layout & living | Practicality, light, storage, outdoor, parking | Day-to-day comfort |
 | Financials | Price vs. comparables, needs renovation, recurring costs, financing fit | Alignment with the [Affordability](../financing/affordability.md) and [Amortization](../financing/calculator.md) tools |
 
-The criteria and weights were chosen to match the risk profile that actually costs Swiss buyers money (see [Visiting & Inspecting](index.md) for the full checklists and red flags).
+The criteria and weights were chosen to match the risk profile that actually costs Swiss buyers money (see [Before the Visit](index.md), [During the Visit](during.md) and [After the Visit](after.md) for the full checklists and red flags).
 
 !!! tip "Pair it with the checklist"
-    Working through [the page guides](index.md) is loaded. Use this scorecard to *decide*; use the [interactive checklist](../checklist.md) to make sure no document, permit or inspection step is missed along the way.
+    Working through the [Before](index.md), [During](during.md) and [After](after.md) guides is the homework. Use this scorecard to *decide*; use the [interactive checklist](../checklist.md) to make sure no document, permit or inspection step is missed along the way.

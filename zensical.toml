@@ -19,10 +19,12 @@ nav = [
       { "Sources" = "sources.md" },
   ] },
   { "Visits" = [
-      { "Visiting & Inspecting" = "visits/index.md" },
-      { "Viewing Scorecard" = "visits/scorecard.md" },
+      { "Before the Visit" = "visits/index.md" },
+      { "During the Visit" = "visits/during.md" },
+      { "After the Visit" = "visits/after.md" },
   ] },
   { "Tools" = [
+      { "Viewing Scorecard" = "visits/scorecard.md" },
       { "Amortization Calculator" = "financing/calculator.md" },
       { "Affordability Calculator" = "financing/affordability.md" },
       { "Tax Estimator" = "taxation/calculator.md" },
