@@ -26,8 +26,8 @@ nav = [
 
 extra_css = ["stylesheets/extra.css"]
 extra_javascript = [
-  "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js",
-  "https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js",
+  "javascripts/vendor/chart.umd.min.js",
+  "javascripts/vendor/alpine.min.js",
   "javascripts/amortization-core.js",
   "javascripts/amortization.js",
   "javascripts/tax-data.js",
