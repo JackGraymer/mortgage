@@ -81,3 +81,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "4"
+          preCommands: |
+            # Surface authentication status in the log; Wrangler hides its
+            # error text on failure, so `whoami` makes the cause visible.
+            wrangler whoami
