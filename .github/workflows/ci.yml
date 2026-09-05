@@ -1,0 +1,75 @@
+﻿name: CI
+
+on:
+  push:
+    branches: [master, improvements]
+  pull_request:
+    branches: [master]
+
+jobs:
+  # ── JavaScript unit tests ─────────────────────────────────────────────────
+  test:
+    name: JavaScript unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run all tests
+        run: node tests/run_all_tests.mjs
+
+  # ── Static site build ─────────────────────────────────────────────────────
+  build:
+    name: Zensical build
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build site
+        run: zensical build
+
+      - name: Upload built site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site/
+          retention-days: 7
+
+  # ── Deploy to Cloudflare (master only) ───────────────────────────────────
+  deploy:
+    name: Deploy to Cloudflare Workers
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download built site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site/
+
+      - name: Deploy via Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
