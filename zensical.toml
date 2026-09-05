@@ -1,7 +1,7 @@
 [project]
 site_url = "https://buying-house-ch.jackgraymer.workers.dev/"
 site_name = "Buying a House in Switzerland"
-site_description = "A practical, self-contained guide to buying residential property in Switzerland (Zurich and Aargau focus, with tax rates for Solothurn and Basel-Landschaft): legal rules, mortgages, taxes, costs and purchase process, plus three built-in calculators."
+site_description = "A practical, self-contained guide to buying residential property in Switzerland (Zurich and Aargau focus, with tax rates for Solothurn and Basel-Landschaft): legal rules, mortgages, taxes, property visits, costs and purchase process, plus built-in calculators."
 site_author = "Alvaro Cervan"
 copyright = "&copy; 2026 Alvaro Cervan"
 
@@ -17,6 +17,10 @@ nav = [
       { "Costs & Fees" = "costs.md" },
       { "Checklist" = "checklist.md" },
       { "Sources" = "sources.md" },
+  ] },
+  { "Visits" = [
+      { "Visiting & Inspecting" = "visits/index.md" },
+      { "Viewing Scorecard" = "visits/scorecard.md" },
   ] },
   { "Tools" = [
       { "Amortization Calculator" = "financing/calculator.md" },
@@ -35,6 +39,8 @@ extra_javascript = [
   "javascripts/affordability.js",
   "javascripts/pillar3a-core.js",
   "javascripts/checklist.js",
+  "javascripts/scorecard-core.js",
+  "javascripts/scorecard.js",
   "javascripts/tax-core.js",
   "javascripts/tax-data.js",
   "javascripts/tax.js",

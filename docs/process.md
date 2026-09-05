@@ -24,7 +24,7 @@ Search → Financing → Reservation → Notarial deed → Land register → Han
 ## Step 2: Property search
 
 -   Browse listings on **immoscout24.ch**, **homegate.ch**, **comparis.ch**, **flatfox.ch** and local real-estate agents
--   Visit properties and attend open houses
+-   Visit properties and attend open houses — use the [Visiting & Inspecting guide](visits/index.md) and the [Viewing Scorecard](visits/scorecard.md) to review candidates consistently
 -   Get a sense of market prices using the notary's published transaction records or online valuation tools (e.g., Wüest Partner, IAZI, bank tools)
 
 !!! tip

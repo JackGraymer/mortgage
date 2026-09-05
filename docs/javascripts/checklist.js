@@ -35,6 +35,7 @@ const CHECKLIST_GROUPS = [
     title: "During the search",
     items: [
       { id: "search-visits", text: "Visit properties in person (multiple times, different times of day)" },
+      { id: "search-scorecard", text: "Score and compare visited properties with the Viewing Scorecard" },
       { id: "search-docs", text: "Request property documents: Grundbuchauszug (land register extract), floor plans, building-permit history, GEAK/CECB energy certificate" },
       { id: "search-zoning", text: "Check zoning (Zonenplan) and any planned developments nearby" },
       { id: "search-inspection", text: "Commission a building inspection if the property is older (structure, roof, heating, plumbing, electrical, asbestos, radon)" },

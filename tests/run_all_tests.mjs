@@ -14,6 +14,7 @@ const suites = [
   "test_tax.mjs",
   "test_affordability.mjs",
   "test_pillar3a.mjs",
+  "test_scorecard.mjs",
 ];
 
 let failed = 0;
