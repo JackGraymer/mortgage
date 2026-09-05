@@ -1,0 +1,11 @@
+﻿{
+  "name": "buying-house-ch",
+"version": "1.0.0",
+  "description": "Static guide to buying a house in Switzerland — tests for mortgage math and tax logic.",
+  "scripts": {
+    "test": "node tests/run_all_tests.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -20,6 +20,7 @@ nav = [
   ] },
   { "Tools" = [
       { "Amortization Calculator" = "financing/calculator.md" },
+      { "Affordability Calculator" = "financing/affordability.md" },
       { "Tax Estimator" = "taxation/calculator.md" },
   ] },
 ]
@@ -30,6 +31,8 @@ extra_javascript = [
   "javascripts/vendor/alpine.min.js",
   "javascripts/amortization-core.js",
   "javascripts/amortization.js",
+  "javascripts/affordability-core.js",
+  "javascripts/affordability.js",
   "javascripts/tax-data.js",
   "javascripts/tax.js",
 ]

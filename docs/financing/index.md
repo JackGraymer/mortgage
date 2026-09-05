@@ -7,8 +7,8 @@ description: How Swiss mortgages work — the two-pillar system, equity requirem
 
 Swiss mortgage lending follows a strict, conservative model. Understanding the two-pillar structure, the equity rules and the affordability test is the most important part of planning a purchase.
 
-!!! tip "Skip to the calculator"
-    If you already know the numbers, use the [Amortization Calculator](calculator.md) to see the interest, principal and monthly costs for your situation.
+!!! tip "Skip to the calculators"
+    If you already know the numbers, use the [Amortization Calculator](calculator.md) to see the interest, principal and monthly costs for your situation — or the [Affordability Calculator](affordability.md) to find how much you can actually borrow under the stress test.
 
 ## The two-pillar mortgage structure
 
@@ -111,9 +111,10 @@ Required minimum income at the 33% ratio: **CHF 194,000 / year**.
 !!! tip "Indirect amortization"
     Paying the 2nd mortgage amortization into a **Pillar 3a** account (pledged to the bank) gives you a tax deduction *and* builds retirement assets. The 2nd mortgage balance stays constant, but your pledged 3a grows. At maturity, the 3a repays the 2nd mortgage. Highly recommended for high earners.
 
-## Try the calculator
+## Try the calculators
 
-[Open the Amortization Calculator](calculator.md) to model your own figures: total interest, principal repaid and monthly costs.
+- [Amortization Calculator](calculator.md) — total interest, principal repaid and monthly costs at your real (non-stress) rate.
+- [Affordability Calculator](affordability.md) — the maximum property you can afford under the bank's 5% stress test and 33% income rule.
 
 ## Sources
 
