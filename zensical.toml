@@ -34,6 +34,7 @@ extra_javascript = [
   "javascripts/affordability-core.js",
   "javascripts/affordability.js",
   "javascripts/pillar3a-core.js",
+  "javascripts/checklist.js",
   "javascripts/tax-core.js",
   "javascripts/tax-data.js",
   "javascripts/tax.js",

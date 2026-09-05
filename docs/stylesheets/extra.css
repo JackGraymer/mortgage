@@ -124,3 +124,70 @@
 .calc-chart {
   margin-top: 1rem;
 }
+
+/* --- Interactive checklist --- */
+.checklist-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.checklist-progress-count {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.checklist-reset {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.375rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.checklist-reset:hover {
+  border-color: var(--md-default-fg-color--light);
+}
+
+.checklist-group {
+  margin-top: 1.25rem;
+}
+
+.checklist-group-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0 0 0.5rem;
+}
+
+.checklist-group-count {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  font-weight: 400;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  cursor: pointer;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-top: 0.2rem;
+  accent-color: #16a34a;
+  flex-shrink: 0;
+}
+
+.checklist-item input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: var(--md-default-fg-color--light);
+}
