@@ -33,6 +33,7 @@ extra_javascript = [
   "javascripts/amortization.js",
   "javascripts/affordability-core.js",
   "javascripts/affordability.js",
+  "javascripts/tax-core.js",
   "javascripts/tax-data.js",
   "javascripts/tax.js",
 ]
