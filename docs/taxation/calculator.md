@@ -95,9 +95,6 @@ Estimate the annual income and wealth tax you would pay when owning a home in **
   </div>
 </div>
 
-<script src="../javascripts/tax-data.js"></script>
-<script src="../javascripts/tax.js"></script>
-
 ## How the estimate is computed
 
 1.  **Imputed rental value** is added to your income. Default: **3.5% of the property value** (a common approximation; the municipality sets the official figure, typically 2.5–3.5% of market value).

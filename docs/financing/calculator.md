@@ -105,10 +105,6 @@ Model your Swiss mortgage. The calculator follows the standard Swiss structure: 
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
-<script src="../javascripts/amortization-core.js"></script>
-<script src="../javascripts/amortization.js"></script>
-
 ## How the model works
 
 The calculator implements the standard Swiss financing structure:

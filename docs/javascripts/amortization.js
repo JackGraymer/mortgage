@@ -59,62 +59,58 @@ function amortizationCalc() {
       const principal = r.rows.map((x) => x.principal);
       const remaining = r.rows.map((x) => window.amortizationCore.round2(x.remaining1 + x.remaining2));
 
-      if (!_chart) {
-        _chart = Chart.getChart(el) || new Chart(el, {
-          data: {
-            labels: labels,
-            datasets: [
-              {
-                type: "line",
-                label: "Remaining debt",
-                data: remaining,
-                borderColor: "#e11d48",
-                backgroundColor: "#e11d48",
-                yAxisID: "y",
-                pointRadius: 1,
-                tension: 0.2,
-                order: 0,
-              },
-              {
-                type: "bar",
-                label: "Interest paid",
-                data: interest,
-                backgroundColor: "rgba(37, 99, 235, 0.75)",
-                yAxisID: "y",
-                order: 1,
-              },
-              {
-                type: "bar",
-                label: "Principal repaid",
-                data: principal,
-                backgroundColor: "rgba(16, 185, 129, 0.75)",
-                yAxisID: "y",
-                order: 1,
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            animation: false,
-            interaction: { mode: "index", intersect: false },
-            scales: {
-              y: {
-                stacked: false,
-                ticks: { callback: (v) => "CHF " + Number(v).toLocaleString("de-CH") },
-              },
-              x: { stacked: false },
-            },
-            plugins: { legend: { position: "top" } },
-          },
-        });
-        return;
+      if (_chart) {
+        _chart.destroy();
+        _chart = null;
       }
 
-      _chart.data.labels = labels;
-      _chart.data.datasets[0].data = remaining;
-      _chart.data.datasets[1].data = interest;
-      _chart.data.datasets[2].data = principal;
-      _chart.update();
+      _chart = new Chart(el, {
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              type: "line",
+              label: "Remaining debt",
+              data: remaining,
+              borderColor: "#e11d48",
+              backgroundColor: "#e11d48",
+              yAxisID: "y",
+              pointRadius: 1,
+              tension: 0.2,
+              order: 0,
+            },
+            {
+              type: "bar",
+              label: "Interest paid",
+              data: interest,
+              backgroundColor: "rgba(37, 99, 235, 0.75)",
+              yAxisID: "y",
+              order: 1,
+            },
+            {
+              type: "bar",
+              label: "Principal repaid",
+              data: principal,
+              backgroundColor: "rgba(16, 185, 129, 0.75)",
+              yAxisID: "y",
+              order: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          animation: false,
+          interaction: { mode: "index", intersect: false },
+          scales: {
+            y: {
+              stacked: false,
+              ticks: { callback: (v) => "CHF " + Number(v).toLocaleString("de-CH") },
+            },
+            x: { stacked: false },
+          },
+          plugins: { legend: { position: "top" } },
+        },
+      });
     },
 
     fmt(n) {
@@ -127,3 +123,28 @@ function amortizationCalc() {
 }
 
 window.amortizationCalc = amortizationCalc;
+
+// Re-initialize Alpine tree on instant navigation if needed
+if (typeof window !== "undefined") {
+  const initAlpineOnPageLoad = () => {
+    if (_chart) {
+      _chart.destroy();
+      _chart = null;
+    }
+    if (window.Alpine) {
+      const widgets = document.querySelectorAll("[x-data]");
+      widgets.forEach((el) => {
+        if (!el._x_dataStack) {
+          window.Alpine.initTree(el);
+        }
+      });
+    }
+  };
+
+  if (window.document$) {
+    window.document$.subscribe(initAlpineOnPageLoad);
+  } else {
+    document.addEventListener("DOMContentLoaded", initAlpineOnPageLoad);
+  }
+}
+
