@@ -121,7 +121,7 @@ At the 5% stress rate:
 | Ancillary | CHF 4,000 |
 | **Total** | **CHF 64,000** |
 
-Required income at 33%: **CHF 194,000/yr**. With CHF 120,000 income the cost uses **53%** — not affordable. The maximum price for CHF 120,000 income at 80% LTV is only about **CHF 400,000**.
+Required income at 33%: **CHF 194,000/yr**. With CHF 120,000 income the cost uses **53%** — not affordable. The maximum price for CHF 120,000 income at 80% LTV (with CHF 4,000 ancillary) is about **CHF 593,000**.
 
 !!! tip "Rule of thumb"
     Most buyers can afford roughly **5–6× gross annual income** (less if ancillary costs are high or equity is low). The stress test is the real constraint — a low actual rate (e.g. 2%) does not increase what the bank will lend you.
